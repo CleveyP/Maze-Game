@@ -6,4 +6,4 @@ We want to add the possibility of encountering a monster. (I dont know what this
 We are going to add a player inventory (so item classes etc. )and multiple levels. We are going to recruit people from the comic club to do our terminal art for us. 
 We are going to create a save feature where the player inventory, current maze level, current player level, health etc will be stored to a local file. 
 I am open to other ideas as well of course on how to make this game beyond awesome!
-Authors: Cleveland Plonsey,
+Authors: Cleveland Plonsey, Zuriel Respicio
