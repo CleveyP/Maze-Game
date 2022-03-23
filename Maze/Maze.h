@@ -14,7 +14,7 @@ class Maze{
     int numRows;
     int numColumns;
     //constructor
-    Maze(int rows, int columns, int difficulty=0);
+    Maze(int rows, int columns, int difficulty);
     //
     void updateGrid();
     void printGrid();

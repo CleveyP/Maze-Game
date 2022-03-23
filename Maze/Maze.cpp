@@ -3,7 +3,7 @@
 
 
 //constructor sets up the grid and the holes in the grid
- Maze::Maze(int rows, int columns, int difficulty=0){
+ Maze::Maze(int rows, int columns, int difficulty){
      if(difficulty>10 || difficulty < 0){
         std::cerr << "Difficulty " << difficulty << "not valid" << std::endl;
         return;

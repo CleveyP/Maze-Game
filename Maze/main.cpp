@@ -1,5 +1,5 @@
 //driver for the maze game
-#include "Maze.h";
+#include "Maze.h"
 using namespace std;
 int main(){
     int rows;
@@ -14,7 +14,7 @@ int main(){
     Maze maze(rows, columns, difficulty);
 
     //start game
-    maze.startGame();
+   // maze.startGame();
 
     return 0;
 }

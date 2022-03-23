@@ -33,7 +33,7 @@ class Player{
 
     void printInventory(){
         for(Item& item : inventory){
-            std::cout << item.name << std::endl;
+            std::cout << item.getName() << std::endl;
         }
     }
 
