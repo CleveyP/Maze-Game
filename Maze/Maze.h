@@ -10,6 +10,9 @@ class Maze{
     //coordinates of the exit door
     int doorX;
     int doorY;
+    //dimensions of grid
+    int numRows;
+    int numColumns;
     //constructor
     Maze(int rows, int columns, int difficulty=0);
     //

@@ -8,11 +8,14 @@
         std::cerr << "Difficulty " << difficulty << "not valid" << std::endl;
         return;
      }
+     //set dimensions
+     numRows = rows;
+     numColumns=columns;
      //generate a random position for the door
      int xCoord = rand() % rows-1;
      int yCoord = rand() % columns-1;
      std::vector<std::vector<char>> newGrid;
-      std::vector<std::vector<bool>> newHoleGrid;
+     std::vector<std::vector<bool>> newHoleGrid;
      for(int i=0; i< rows; i++){
          std::vector<char> currentRow;
           std::vector<bool> currentHoleRow;
@@ -22,7 +25,9 @@
             currentRow.push_back('#'); //add a hedge
          }
          newGrid.push_back(currentRow);
+         currentRow.clear();
          newHoleGrid.push_back(currentHoleRow);
+         currentHoleRow.clear();
      }
 
      //place door 
@@ -61,7 +66,9 @@ void Maze::updateGrid(){
 
 //prints the current grid
   void Maze::printGrid(){
-      system("CLS"); //clear the terminal screen before printing grid
+      system("CLS"); //clear the terminal screen before printing grid NOTE THIS PROGRAM RUNS ON WINDOWS CMD
+      //TODO: detect the system architecture ie LINUX MAC and then use the proper terminal commands for the found architecture.
+      //right now only works for windows cmd
       for(int i=0; i< grid.size(); i++){
           std::cout << std::endl;
           for (int j=0; j< grid.at(0).size(); j++){
